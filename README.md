@@ -12,11 +12,15 @@ This project was developed to demonstrate a complete full-stack architecture, in
 - Database persistence
 - Containerized deployment using Docker
 
-## Architecture
+## Architecture Overview
 
-The application is composed of the following services:
+The application is built using a microservice-style architecture with both synchronous and asynchronous communication.
 
-- **Frontend** – User interface for interacting with the system
-- **Backend API** – Handles business logic and data processing
-- **Database** – Stores ticket and user data
-- **Docker Compose** – Orchestrates all services
+### Core Components
+
+- **Frontend** – Web interface for users
+- **Backend API** – Handles ticket operations and business logic
+- **Database** – Stores application data
+- **NGINX** – Reverse proxy and load balancer
+- **RabbitMQ** – Handles internal asynchronous task processing
+- **Kafka** – Event streaming between services
